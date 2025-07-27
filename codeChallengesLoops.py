@@ -35,3 +35,31 @@ print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
 print(delete_starting_evens([4, 8, 10]))
 
 
+### Odd Indices List
+#Write your function here
+def odd_indices(my_list):
+  odd_indices_list = []
+  for i in my_list:
+    if my_list.index(i) % 2 == 1:
+      odd_indices_list.append(i)
+  return odd_indices_list
+
+#Uncomment the line below when your function is done
+print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+
+### Exponents
+#Write your function here
+def exponents(bases, powers):
+  powered_list = []
+  for i in bases:
+    for z in powers:
+      powered = i ** z
+      powered_list.append(powered)
+  return powered_list
+      
+#Uncomment the line below when your function is done
+print(exponents([2, 3, 4], [1, 2, 3]))
+
+
+
