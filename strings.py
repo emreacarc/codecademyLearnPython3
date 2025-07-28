@@ -41,6 +41,30 @@ def get_length(string1):
     counter += 1
   return counter
 
+def letter_check(word, letter):
+  for i in word:
+    if letter == i:
+      return True
+      break
+  return False
+
+def contains(big_string, little_string):
+  if little_string in big_string:
+    return True
+  else:
+    return False
+
+def common_letters(string_one, string_two):
+  common_list = []
+  for i in string_one:
+    if i in string_two and not i in common_list:
+      common_list.append(i)
+  return common_list
+
+
+
+
+
 
 
 
